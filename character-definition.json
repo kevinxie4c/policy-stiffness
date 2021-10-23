@@ -1,0 +1,245 @@
+{
+    "name": "Hips",
+    "pos": [0, 0, 0],
+    "type": "planar",
+    "plane": "yz",
+    "mass": 11.17,
+    "COM": [0, 0, 0],
+    "shape": [
+	{
+	    "type": "box",
+	    "size": [18, 17, 10],
+	    "pos": [0, 0, 0]
+	}
+    ],
+    "children": [
+	{
+	    "name": "LeftUpLeg",
+	    "pos": [9.5677228, 0.0, 0.0],
+	    "type": "revolute",
+	    "axis": "x",
+	    "mass": 3.82,
+	    "COM": [0, -21.63, 0],
+	    "shape": [
+		{
+		    "type": "box",
+		    "size": [10, 43.26, 10],
+		    "pos": [0, -21.63, 0]
+		}
+	    ],
+	    "children": [
+		{
+		    "name": "LeftLeg",
+		    "pos": [-43.26, 0, 0],
+		    "type": "revolute",
+		    "axis": "x",
+		    "mass": 2.51,
+		    "COM": [-19.97, 0, 0],
+		    "shape": [
+			{
+			    "type": "box",
+			    "size": [10, 39.93, 10],
+			    "pos": [0, -19.97, 0]
+			}
+		    ],
+		    "children": [
+			{
+			    "name": "LeftFoot",
+			    "pos": [0, -39.93, 0],
+			    "type": "revolute",
+			    "axis": "x",
+			    "mass": 0.63,
+			    "COM": [0, -4.10, 10],
+			    "shape": [
+				{
+				    "type": "box",
+				    "size": [10, 5, 20],
+				    "pos": [0, -4.10, 10]
+				}
+			    ]
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "name": "RightUpLeg",
+	    "pos": [-9.5677228, 0.0, 0.0],
+	    "type": "revolute",
+	    "axis": "x",
+	    "mass": 3.82,
+	    "COM": [0, -21.63, 0],
+	    "shape": [
+		{
+		    "type": "box",
+		    "size": [10, 43.26, 10],
+		    "pos": [0, -21.63, 0]
+		}
+	    ],
+	    "children": [
+		{
+		    "name": "RightLeg",
+		    "pos": [-43.26, 0, 0],
+		    "type": "revolute",
+		    "axis": "x",
+		    "mass": 2.51,
+		    "COM": [-19.97, 0, 0],
+		    "shape": [
+			{
+			    "type": "box",
+			    "size": [10, 39.93, 10],
+			    "pos": [0, -19.97, 0]
+			}
+		    ],
+		    "children": [
+			{
+			    "name": "RightFoot",
+			    "pos": [0, -39.93, 0],
+			    "type": "revolute",
+			    "axis": "x",
+			    "mass": 0.63,
+			    "COM": [0, -4.10, 10],
+			    "shape": [
+				{
+				    "type": "box",
+				    "size": [10, 5, 20],
+				    "pos": [0, -4.10, 10]
+				}
+			    ]
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "name": "Chest",
+	    "pos": [0, 17.00, 0],
+	    "type": "revolute",
+	    "axis": "x",
+	    "mass": 16.32,
+	    "COM": [0, 13.83, 0],
+	    "shape": [
+		{
+		    "type": "box",
+		    "size": [18, 27.67, 10],
+		    "pos": [0, 17.00, 0]
+		}
+	    ],
+	    "children": [
+		{
+		    "name": "Neck",
+		    "pos": [0, 27.67, 0],
+		    "type": "revolute",
+		    "axis": "x",
+		    "mass": 3.14,
+		    "COM": [0, 7.43, 0],
+		    "shape": [
+			{
+			    "type": "box",
+			    "size": [10, 14.85, 10],
+			    "pos": [0, 7.43, 0]
+			}
+		    ]
+		},
+		{
+		    "name": "LeftArm",
+		    "pos": [18.32, 27.67, 0],
+		    "type": "revolute",
+		    "axis": "x",
+		    "mass": 1.43,
+		    "COM": [0, -12.25, 0],
+		    "shape": [
+			{
+			    "type": "box",
+			    "size": [10, 24.51, 10],
+			    "pos": [0, -12.25, 0]
+			}
+		    ],
+		    "children": [
+			{
+			    "name": "LeftForeArm",
+			    "pos": [0, -24.51, 0],
+			    "type": "revolute",
+			    "axis": "x",
+			    "mass": 0.83,
+			    "COM": [0, -11.52, 0],
+			    "shape": [
+				{
+				    "type": "box",
+				    "size": [10, 23.03, 10],
+				    "pos": [0, -11.52, 0]
+				}
+			    ],
+			    "children": [
+				{
+				    "name": "LeftHand",
+				    "pos": [0, -23.03, 0],
+				    "type": "revolute",
+				    "axis": "x",
+				    "mass": 0.42,
+				    "COM": [0, -5, 0],
+				    "shape": [
+					{
+					    "type": "box",
+					    "size": [10, 10, 10],
+					    "pos": [0, -5, 0]
+					}
+				    ]
+				}
+			    ]
+			}
+		    ]
+		},
+		{
+		    "name": "RightArm",
+		    "pos": [18.32, 27.67, 0],
+		    "type": "revolute",
+		    "axis": "x",
+		    "mass": 1.43,
+		    "COM": [0, -12.25, 0],
+		    "shape": [
+			{
+			    "type": "box",
+			    "size": [10, 24.51, 10],
+			    "pos": [0, -12.25, 0]
+			}
+		    ],
+		    "children": [
+			{
+			    "name": "RightForeArm",
+			    "pos": [0, -24.51, 0],
+			    "type": "revolute",
+			    "axis": "x",
+			    "mass": 0.83,
+			    "COM": [0, -11.52, 0],
+			    "shape": [
+				{
+				    "type": "box",
+				    "size": [10, 23.03, 10],
+				    "pos": [0, -11.52, 0]
+				}
+			    ],
+			    "children": [
+				{
+				    "name": "RightHand",
+				    "pos": [0, -23.03, 0],
+				    "type": "revolute",
+				    "axis": "x",
+				    "mass": 0.42,
+				    "COM": [0, -5, 0],
+				    "shape": [
+					{
+					    "type": "box",
+					    "size": [10, 10, 10],
+					    "pos": [0, -5, 0]
+					}
+				    ]
+				}
+			    ]
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}

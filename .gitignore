@@ -1,0 +1,11 @@
+*.o
+*.txt
+*.out
+*.bvh
+*.cmake
+*.tar
+*.gz
+.tags
+CMakeFiles/
+Makefile
+!CMakeLists.txt
